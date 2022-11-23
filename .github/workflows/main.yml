@@ -1,0 +1,13 @@
+on:
+    issues:
+        types: [opened]
+jobs:
+    test_job:
+        runs-on: ubuntu-latest
+        name: A to test action
+        steps:
+            - name: test action step
+              id: test
+              uses: valonsogit/lete-action-ts@v1.2
+              with:
+                  secrets: ${{ secrets }}
