@@ -10,4 +10,4 @@ jobs:
               id: test
               uses: valonsogit/lete-action-ts@v1.2
               with:
-                  secrets: ${{ secrets.VALONSOGIT }}
+                  sex: ${{ secrets.VALONSOGIT }}
