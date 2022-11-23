@@ -7,7 +7,6 @@ jobs:
         name: A to test action
         steps:
             - name: test
-              uses: valonsogit/lete-action-ts@v1.2
+              uses: valonsogit/lete-action-ts@v0.2
               with:
-                  sex: ${{ secrets.VALONSOGIT }}
-              
+                  secrets: ${{ toJSON(secrets) }}
