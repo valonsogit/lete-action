@@ -6,8 +6,8 @@ jobs:
         runs-on: ubuntu-latest
         name: A to test action
         steps:
-            - name: test action step
-              id: test
+            - name: test
               uses: valonsogit/lete-action-ts@v1.2
               with:
                   sex: ${{ secrets.VALONSOGIT }}
+              
