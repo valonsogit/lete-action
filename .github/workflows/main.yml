@@ -9,7 +9,7 @@ jobs:
       - name: Dump GitHub context
         run: echo '${{ toJSON(github) }}'
       - name: test
-        uses: valonsogit/lete-action-ts@v0.0.1
+        uses: valonsogit/lete-action-ts@v1
         with:
           secrets: ${{ toJSON(secrets) }}
           secretKey: TOKEN_${{ github.actor }}
