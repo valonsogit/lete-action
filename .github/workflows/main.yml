@@ -12,7 +12,7 @@ jobs:
         uses: valonsogit/lete-action-ts@v0.0.1
         with:
           secrets: ${{ toJSON(secrets) }}
-          secretKey: TOKEN_${{ github.issue.author }}
+          secretKey: TOKEN_${{ github.actor }}
           outputName: SEX_MACHINE
       - name: "Print ouput of previous step"
         run: echo "$SEX_MACHINE"
